@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+
+<h2 align="center">Registration</h2>
+
+<form action="Thankyou.html" method="get">
+
+<table border="1" width="80%" align="center" cellpadding="4">
+
+    <tr>
+        <th colspan="2">Personal Data</th>
+    </tr>
+
+    <tr>
+        <td>First Name</td>
+        <td>
+            <input type="text" pattern="[A-Za-z ]+" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Last Name</td>
+        <td>
+            <input type="text" pattern="[A-Za-z ]+" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>
+            <input type="email" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td>
+            <input type="password" id="pass"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+            required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Repeat Password</td>
+        <td>
+            <input type="password" id="repass" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Phone Number</td>
+        <td>
+            <input type="tel"
+            pattern="01[0125][0-9]{8}" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>GPA</td>
+        <td>
+            <input type="number" min="0" max="4"
+            step="0.1" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Upload Photo</td>
+        <td>
+            <input type="file" accept="image/*">
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Gender</td>
+        <td>
+            <input type="radio" name="gender" value="Male" required>
+            Male
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="radio" name="gender" value="Female">
+            Female
+        </td>
+    </tr>
+
+    <tr>
+        <td>Faculty</td>
+        <td>
+            <select required>
+                <option value="">Choose Faculty</option>
+                <option>Computer Science</option>
+                <option>Engineering</option>
+                <option>Commerce</option>
+                <option>Medicine</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Interests</th>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="checkbox" name="interest" value="Programming">
+            Programming
+        </td>
+
+        <td>
+            <input type="checkbox" name="interest" value="Drawing">
+            Drawing
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="checkbox" name="interest" value="Reading">
+            Reading
+        </td>
+
+        <td>
+            <input type="checkbox" name="interest" value="Football">
+            Playing Football
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="checkbox" name="interest" value="Swimming">
+            Swimming
+        </td>
+
+        <td>
+            <input type="checkbox" name="interest" value="Music">
+            Music
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="2">About You</th>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <textarea rows="4" cols="50"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+
+            <button type="submit">OK</button>
+
+            <button type="reset">Cancel</button>
+
+        </td>
+    </tr>
+
+</table>
+
+<br>
+
+<center>
+    <input type="checkbox" required>
+    I agree to all terms and conditions.
+</center>
+
+</form>
+
+
+
+
+
+</body>
+</html>
